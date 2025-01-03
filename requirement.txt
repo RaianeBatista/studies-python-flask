@@ -5,3 +5,5 @@ Flask-Cors==3.0.10
 Werkzeug==2.3.0
 
 python -m pip install Flask
+
+SQL - ORM - Object Relactional Maper (objeto de relação mapeador)
