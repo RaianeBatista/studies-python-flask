@@ -7,3 +7,17 @@ Werkzeug==2.3.0
 python -m pip install Flask
 
 SQL - ORM - Object Relactional Maper (objeto de relação mapeador)
+
+
+#Modelagem
+#Produto (id, name, price, description)
+#Colunas da tabela: id, name, price, description
+# Cada  produto cadastrado add uma nova linha e preenche as colunas dessa nova linha com as informações
+
+Gerando o Banco de dados: 
+No terminal:
+* flask shell
+*  db.create_all()
+ db.session.commit() -> session é a propriedade que armazena a conexão com o Banco
+ commit() é o método para efetivar as mudanças no banco
+ * exit()
