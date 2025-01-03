@@ -18,6 +18,22 @@ Gerando o Banco de dados:
 No terminal:
 * flask shell
 *  db.create_all()
- db.session.commit() -> session é a propriedade que armazena a conexão com o Banco
+* db.session.commit() -> session é a propriedade que armazena a conexão com o Banco
  commit() é o método para efetivar as mudanças no banco
  * exit()
+
+Abaixo temos a estrutura de um payload, dados em formato JSON:
+{
+    "id":0,
+    "name": "string",
+    "price": 0,
+    "description": "string"
+}
+
+Rodando um arquivo python: python app.py
+
+def delete_product(product_id):
+    #Recuperar o produto da base de dados
+    #Verificar se o produto existe
+    #Se existe, apagar da base da dados
+    #Se não existe, retornar 404 not found
